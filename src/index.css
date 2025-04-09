@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic");
+@import "tailwindcss";
+
+:root {
+  --font-main-display: "Lobster", serif;
+  --font-second-display: "Open Sans", sans-serif;
+
+  --space-cadet: #282e46ff;
+  --liver: #6c4e49ff;
+  --brown-sugar: #af6e4cff;
+  --lion: #cfa775ff;
+  --vanilla: #efdf9dff;
+  --wheat: #f5deb3;
+
+  --global-padding: clamp(2rem, 3vw, 4rem) clamp(4rem, 5vw, 6rem);
+
+  --nav-padding: clamp(1rem, 1.5vw, 2rem) clamp(4rem, 5vw, 6rem);
+  --nav-text-size: clamp(1rem, 1.5vw, 2rem);
+  --nav-logo-size: clamp(2rem, 2.5vw, 3rem);
+
+  --span-size: clamp(1rem, 1vw, 1.5rem);
+  --p-size: clamp(1rem, 1.5vw, 2rem);
+  --h1-size: clamp(2.5rem, 3vw, 4rem);
+  --h2-size: clamp(1.5rem, 2.25vw, 3rem);
+  --h3-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+body {
+  font-family: var(--font-main-display);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-main-display);
+}
+
+p,
+span,
+button,
+li,
+a {
+  font-family: var(--font-second-display);
+}
+
+section {
+  padding: var(--global-padding);
+}
+nav {
+  padding: var(--nav-padding);
+}
+.nav-item {
+  @apply text-(--vanilla) space-x-5;
+  font-size: var(--nav-text-size);
+}
+
+.nav-logo {
+  @apply text-(--vanilla) font-bold;
+  font-size: var(--nav-logo-size);
+  white-space: nowrap;
+  
+}
+
+button {
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+  border: 2px solid inherit;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 600;
+  font-size: var(--p-size);
+}
+span {
+  font-size: var(--span-size);
+}
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
