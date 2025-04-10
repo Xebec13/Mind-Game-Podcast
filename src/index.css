@@ -16,9 +16,6 @@
   --global-padding: clamp(2rem, 3vw, 4rem) clamp(2rem, 3vw, 4rem);
   --nav-padding: clamp(1rem, 1.5vw, 2rem) clamp(2rem, 3vw, 4rem);
 
-  --nav-text-size: clamp(1rem, 1.25vw, 1.5rem);
-  --nav-logo-size: clamp(2rem, 2.5vw, 3rem);
-
   --span-size: clamp(.7rem, .9vw, 1.5rem);
   --p-size: clamp(.8rem, 1.5vw, 2rem);
   --h1-size: clamp(2.5rem, 3vw, 4rem);
@@ -53,17 +50,7 @@ section {
 nav {
   padding: var(--nav-padding);
 }
-.nav-item {
-  @apply text-(--vanilla) space-x-5;
-  font-size: var(--nav-text-size);
-}
 
-.nav-logo-text {
-  @apply text-(--vanilla) font-bold;
-  font-size: var(--nav-logo-size);
-  white-space: nowrap;
-  
-}
 
 button {
   padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 3rem);
