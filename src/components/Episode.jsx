@@ -11,7 +11,7 @@ const episodeCard = [
 
 const Episode = () => {
   return (
-    <section className="bg-(--liver)">
+    <section id="episode" className="bg-(--liver)">
       <div className="mb-5">
         <h1>Latest Episodes</h1>
         <span className="text-white">Featured</span>
@@ -25,6 +25,8 @@ const Episode = () => {
                 alt={`Cover image for ${title}`}
                 className="h-full w-full object-cover object-center rounded-xl"
                 loading="lazy"
+                width="640"
+                height="360"
               />
             </div>
             <div className="mt-3">

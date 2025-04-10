@@ -13,14 +13,14 @@
   --vanilla: #efdf9dff;
   --wheat: #f5deb3;
 
-  --global-padding: clamp(2rem, 3vw, 4rem) clamp(4rem, 5vw, 6rem);
+  --global-padding: clamp(2rem, 3vw, 4rem) clamp(2rem, 3vw, 4rem);
+  --nav-padding: clamp(1rem, 1.5vw, 2rem) clamp(2rem, 3vw, 4rem);
 
-  --nav-padding: clamp(1rem, 1.5vw, 2rem) clamp(4rem, 5vw, 6rem);
-  --nav-text-size: clamp(1rem, 1.5vw, 2rem);
+  --nav-text-size: clamp(1rem, 1.25vw, 1.5rem);
   --nav-logo-size: clamp(2rem, 2.5vw, 3rem);
 
-  --span-size: clamp(1rem, 1vw, 1.5rem);
-  --p-size: clamp(1rem, 1.5vw, 2rem);
+  --span-size: clamp(.7rem, .9vw, 1.5rem);
+  --p-size: clamp(.8rem, 1.5vw, 2rem);
   --h1-size: clamp(2.5rem, 3vw, 4rem);
   --h2-size: clamp(1.5rem, 2.25vw, 3rem);
   --h3-size: clamp(1.5rem, 2vw, 3rem);
@@ -43,6 +43,8 @@ button,
 li,
 a {
   font-family: var(--font-second-display);
+  list-style: none;
+  text-decoration: none;
 }
 
 section {
@@ -56,7 +58,7 @@ nav {
   font-size: var(--nav-text-size);
 }
 
-.nav-logo {
+.nav-logo-text {
   @apply text-(--vanilla) font-bold;
   font-size: var(--nav-logo-size);
   white-space: nowrap;
@@ -65,7 +67,7 @@ nav {
 
 button {
   padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 3rem);
-  font-size: clamp(1rem, 1.25vw, 1.5rem);
+  font-size: clamp(.8rem, 1.25vw, 1.5rem);
   border: 2px solid inherit;
   border-radius: 25px;
   text-transform: uppercase;

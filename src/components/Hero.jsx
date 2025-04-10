@@ -7,7 +7,7 @@ const podcastInfo = {
 
 const Hero = () => {
   return (
-    <section className='relative bg-center bg-repeat flex flex-col items-center justify-center text-center'>
+    <section id="home" className='relative bg-center bg-repeat flex flex-col items-center justify-center text-center'>
       {/* Overlay */}
       {/* <div className="absolute h-full inset-0 bg-(--vanilla) opacity-95"></div> */}
       <div className="relative text-(--space-cadet) flex flex-col w-3/4">
