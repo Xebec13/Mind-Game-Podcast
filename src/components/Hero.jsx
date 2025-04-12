@@ -7,14 +7,15 @@ const podcastInfo = {
 
 const Hero = () => {
   return (
-    <section id="home" className='relative bg-center bg-repeat flex flex-col items-center justify-center text-center'>
-      {/* Overlay */}
-      {/* <div className="absolute h-full inset-0 bg-(--vanilla) opacity-95"></div> */}
-      <div className="relative text-(--space-cadet) flex flex-col w-3/4">
+    <section
+      id="home"
+      className="bg-(--liver) text-center text-(--wheat) flex flex-col items-center justify-center "
+    >
+      <div className="relative flex flex-col w-3/4 ">
         <p>{podcastInfo.info}</p>
         <p>{podcastInfo.cast}</p>
       </div>
-      <button className="relative bg-(--lion) text-(--space-cadet) mt-3 cursor-pointer">
+      <button className="bg-(--space-cadet) mt-3 cursor-pointer">
         Listen Now
       </button>
     </section>

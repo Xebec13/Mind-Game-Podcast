@@ -18,15 +18,15 @@ const About = () => {
         <img
           src={aboutImage}
           alt="hosts"
-          className="rounded-2xl w-full min-w-2xs"
+          className="rounded-2xl w-full"
           loading="lazy"
         />
       </div>
-      <div className="flex w-full gap-4">
+      <div className="flex flex-col md:flex-row w-full gap-4 mt-5">
         {aboutInfo.map(({ name, info }, index) => (
           <div
             key={index}
-            className={`w-1/2 p-5 bg-(--wheat) rounded-3xl mt-5 ${
+            className={`bg-(--vanilla) w-full md:w-1/2 p-5 rounded-3xl ${
               index % 2 === 0 ? "text-left" : "text-right"
             }`}
           >

@@ -16,9 +16,9 @@
   --global-padding: clamp(2rem, 3vw, 4rem) clamp(2rem, 3vw, 4rem);
   --nav-padding: clamp(1rem, 1.5vw, 2rem) clamp(2rem, 3vw, 4rem);
 
-  --span-size: clamp(.7rem, .9vw, 1.5rem);
-  --p-size: clamp(.8rem, 1.5vw, 2rem);
-  --h1-size: clamp(2.5rem, 3vw, 4rem);
+  --span-size: clamp(.9rem, 1vw, 1.5rem);
+  --p-size: clamp(1rem, 1.5vw, 2rem);
+  --h1-size: clamp(2.5rem, 2.75vw, 3.5rem);
   --h2-size: clamp(1.5rem, 2.25vw, 3rem);
   --h3-size: clamp(1.5rem, 2vw, 3rem);
 }
@@ -51,10 +51,9 @@ nav {
   padding: var(--nav-padding);
 }
 
-
 button {
   padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 3vw, 3rem);
-  font-size: clamp(.8rem, 1.25vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.25vw, 1.5rem);
   border: 2px solid inherit;
   border-radius: 25px;
   text-transform: uppercase;
@@ -73,4 +72,13 @@ h1 {
 }
 h2 {
   font-size: var(--h2-size);
+}
+
+.test-bg {
+  background: radial-gradient(
+    rgba(108, 78, 73, 0.8) 0%, /* Liver color with 80% opacity */
+    rgba(108, 78, 73, 0.8) 80%, /* Liver color with 80% opacity */
+    rgba(108, 78, 73, 1) 100% /* Liver color with 50% opacity */
+    ),
+    url(src/assets/bbpatern.jpg) repeat 10%/40%;
 }

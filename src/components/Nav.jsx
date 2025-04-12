@@ -20,9 +20,11 @@ const Nav = () => {
   const closeMenu = () => {
     setIsMenuOpen(false)
   }
+
+  
   return (
     <nav id="nav" className="bg-(--space-cadet)">
-      
+
       {/* SCREEN SM */}
       <div className=" relative flex justify-between items-center w-full text-(--vanilla) text-4xl md:hidden">
         <a href="#nav" className="w-1/6">
@@ -56,15 +58,15 @@ const Nav = () => {
 
       {/* SCREEN MD */}
       <div className=" md:flex justify-center items-center text-(--vanilla) hidden">
-        <ul className="md:flex justify-start items-center w-1/3 space-x-3 ">
+        <ul className="flex justify-start items-center w-1/3 space-x-3 ">
           {NavItems.map(({ text, href }, index) => (
             <li key={index} className="text-xl">
               <a href={href}>{text}</a>
             </li>
           ))}
         </ul>
-        <div className="md:flex flex-col justify-center items-center w-1/3">
-          <a href="#nav" className="w-1/2">
+        <div className="flex flex-col justify-center items-center w-1/3">
+          <a href="#nav" className="w-1/3">
             <img
               className="w-full h-full object-cover"
               src={logo}
@@ -72,9 +74,9 @@ const Nav = () => {
               loading="lazy"
             />
           </a>
-          <h1>Mind the Game</h1>
+          <h1 className="whitespace-nowrap">Mind the Game</h1>
         </div>
-        <div className="md:flex justify-end items-center w-1/3 space-x-5 text-xl">
+        <div className="flex justify-end items-center w-1/3 space-x-5 text-xl">
           <FaInstagramSquare aria-label="Instagram" />
           <FaXTwitter aria-label="X" />
           <FaYoutube aria-label="YouTube" />

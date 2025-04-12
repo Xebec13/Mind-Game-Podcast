@@ -11,27 +11,25 @@ const episodeCard = [
 
 const Episode = () => {
   return (
-    <section id="episode" className="bg-(--liver)">
-      <div className="mb-5">
+    <section id="episode" className="bg-(--vanilla) text-(--space-cadet) text-center md:text-left">
+      <div className="mb-4">
         <h1>Latest Episodes</h1>
-        <span className="text-white">Featured</span>
+        <span>Featured</span>
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-rows-3 md:grid-cols-3 md:grid-rows-none gap-4">
         {episodeCard.map(({ title, description, image }, index) => (
-          <div key={index} className="p-1">
+          <div key={index} className="w-3/4 md:w-full mx-auto">
             <div className="w-full aspect-video">
               <img
                 src={image}
                 alt={`Cover image for ${title}`}
-                className="h-full w-full object-cover object-center rounded-xl"
+                className="h-full w-full object-cover rounded-xl min-w-full"
                 loading="lazy"
-                width="640"
-                height="360"
               />
             </div>
-            <div className="mt-3">
+            <div className="mt-2">
               <h2>{title}</h2>
-              <span className="text-white">{description}</span>
+              <span>{description}</span>
             </div>
           </div>
         ))}
