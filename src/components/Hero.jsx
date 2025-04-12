@@ -11,7 +11,7 @@ const Hero = () => {
       id="home"
       className="bg-(--liver) text-center text-(--wheat) flex flex-col items-center justify-center "
     >
-      <div className="relative flex flex-col w-3/4 ">
+      <div className="relative flex flex-col w-full md:w-3/4 ">
         <p>{podcastInfo.info}</p>
         <p>{podcastInfo.cast}</p>
       </div>

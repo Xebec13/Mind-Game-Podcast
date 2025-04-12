@@ -32,9 +32,9 @@ const galleryImages = [
 const Gallery = () => {
   return (
     <section className="bg-(--liver)">
-      <div className=" grid grid-cols-3 gap-2 w-1/2 mx-auto">
+      <div className=" grid grid-cols-3 gap-4 md:w-3/4 mx-auto">
         {galleryImages.map(({ image }, index) => (
-          <div key={index} className="w-full aspect-video">
+          <div key={index} className="w-full h-full aspect-square">
             <img
               src={image}
               alt={`Gallery image ${index + 1}`}

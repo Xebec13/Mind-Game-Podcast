@@ -18,12 +18,12 @@ const Episode = () => {
       </div>
       <div className="grid grid-rows-3 md:grid-cols-3 md:grid-rows-none gap-4">
         {episodeCard.map(({ title, description, image }, index) => (
-          <div key={index} className="w-3/4 md:w-full mx-auto">
+          <div key={index} className="w-full  mx-auto">
             <div className="w-full aspect-video">
               <img
                 src={image}
                 alt={`Cover image for ${title}`}
-                className="h-full w-full object-cover rounded-xl min-w-full"
+                className="h-full w-full object-cover object-center rounded-xl min-w-full"
                 loading="lazy"
               />
             </div>
